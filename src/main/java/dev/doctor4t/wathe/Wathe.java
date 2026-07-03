@@ -80,7 +80,7 @@ public class Wathe implements ModInitializer {
 
         ServerMessageEvents.ALLOW_CHAT_MESSAGE.register((message, sender, params) -> {
             MinecraftServer server = sender.getServer();
-            int range = 20;
+            int range = 8;
 
             server.getPlayerManager().broadcast(
                     message.getContent(),
